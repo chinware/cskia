@@ -4,3 +4,8 @@
 # See https://qinware.com/LICENSE.txt for license information
 #
 # Created by CHINBOY on 2025/08/03.
+
+set(CSKIA_VERSION_MAJOR 0)
+set(CSKIA_VERSION_MINOR 0)
+    set(CSKIA_VERSION_PATCH 1)
+set(CSKIA_VERSION "${CSKIA_VERSION_MAJOR}.${CSKIA_VERSION_MINOR}.${CSKIA_VERSION_PATCH}")
