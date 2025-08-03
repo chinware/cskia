@@ -1,0 +1,65 @@
+.idea
+**/dist/*
+**/build/*
+cmake-build-debug/*
+output
+output-*
+build
+*.swp
+*.swo
+.json
+**/__pycache__/
+*.pyc
+*.exe
+
+# Cangjie generated files.
+**/*.cached/*
+**/.*_Cache/*
+*.ast
+*.cjo
+*.o
+*.bc
+*.cbc
+*.bchir
+*.map
+*.prof
+*.macrocall
+# Various tag programs
+/tags
+/TAGS
+/GPATH
+/GRTAGS
+/GSYMS
+/GTAGS
+.gitusers
+autom4te.cache
+cscope.files
+cscope.out
+autoconf/aclocal.m4
+autoconf/autom4te.cache
+/compile_commands.json
+
+# VS2017 and VSCode config files.
+.vscode
+.vs
+# clangd index
+.clangd
+.ccls-cache
+.cache
+
+# emacs
+*~
+\#*\#
+.\#*
+
+# ccls
+.ccls
+
+# gdb
+**/.gdb_history
+
+# vscode
+.VSCodeCounter/
+
+# macOS build cache
+.DS_Store
