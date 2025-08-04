@@ -43,7 +43,13 @@ endif()
 
 message(STATUS "Build type for the current project: ${CMAKE_BUILD_TYPE}")
 
+include(Utils)
 include(ConfgureTriple)
+include(ConfigureRequirePackages)
+include(AddCSkiaTargetUtils)
+include(ConfigureOptions)
+include(ConfigureStdPath)
+include(ImportSkia)
 
 if(DARWIN)
     include(ReadDarwinSDKInfo)
@@ -67,6 +73,11 @@ endif()
 
 string(TOLOWER "${CMAKE_SYSTEM_NAME}" TARGET_OS)
 add_compile_definitions(__${TARGET_OS}__)
+
+if(CSKIA_BUILD_UNITTESTS)
+    enable_testing()
+    add_subdirectory(tests)
+endif()
 
 add_subdirectory(include/cskia)
 add_subdirectory(src)
