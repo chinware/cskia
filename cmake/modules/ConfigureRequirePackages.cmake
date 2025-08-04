@@ -4,3 +4,6 @@
 # See https://qinware.com/LICENSE.txt for license information
 #
 # Created by CHINBOY on 2025/08/03.
+
+find_package(Git REQUIRED)
+find_package(Python3 REQUIRED)
