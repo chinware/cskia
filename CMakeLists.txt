@@ -45,11 +45,11 @@ message(STATUS "Build type for the current project: ${CMAKE_BUILD_TYPE}")
 
 include(Utils)
 include(ConfgureTriple)
-include(ConfigureRequirePackages)
 include(AddCSkiaTargetUtils)
 include(ConfigureOptions)
 include(ConfigureStdPath)
 include(ImportSkia)
+include(ConfigureRequirePackages)
 
 if(DARWIN)
     include(ReadDarwinSDKInfo)
