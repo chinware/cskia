@@ -24,3 +24,4 @@ option(CSKIA_USE_WAYLAND "Using Wayland protocol support, This requires EGL, as 
 option(CSKIA_USE_VULKAN "Using the Vulkan graphics API." OFF)
 option(CSKIA_USE_METAL "Using the Apple Meta graphics API." OFF)
 option(CSKIA_USE_DIRECT3D "Using the Microsoft Direct3D graphics API." OFF)
+option(CSKIA_FORCE_SYNC_DEPS "Force synchronization of skia dependencies." OFF)

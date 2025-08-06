@@ -5,5 +5,5 @@
 #
 # Created by CHINBOY on 2025/08/03.
 
-inport_skia()
+cskia_inport_skia()
 
