@@ -63,3 +63,5 @@ autoconf/autom4te.cache
 
 # macOS build cache
 .DS_Store
+
+CMakeUserPresets.json

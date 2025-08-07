@@ -1,0 +1,26 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 28,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "linux_base",
+            "hidden": true,
+            "generator": "Ninja"
+        },
+        {
+            "name": "linux_x64_debug",
+            "inherits": "linux_base",
+            "displayName": "cskia linux_x64 debug Build",
+            "description": "Default configuration using linux_x64 toolchain.",
+            "binaryDir": "${sourceDir}/build/linux_x64_debug",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/cmake/toolchains/linux_x64_toolchain.cmake"
+            }
+        }
+    ]
+}
