@@ -22,5 +22,14 @@
                 "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/cmake/toolchains/linux_x64_toolchain.cmake"
             }
         }
+    ],
+    "buildPresets": [
+        {
+            "name": "linux_x64_debug_build",
+            "configurePreset": "linux_x64_debug",
+            "configuration": "Debug",
+            "cleanFirst": true,
+            "verbose": true
+        }
     ]
 }
