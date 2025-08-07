@@ -40,6 +40,6 @@ function(cskia_sync_deps)
     endif()
 endfunction()
 
-macro(cskia_inport_skia)
+macro(cskia_import_skia)
 
 endmacro()
