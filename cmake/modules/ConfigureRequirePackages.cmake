@@ -12,7 +12,7 @@ if(NOT EXISTS "${CSKIA_SKIA_GN_EXECUTABLE}" OR ${CSKIA_FORCE_SYNC_DEPS})
     cskia_fetch_gn()
 endif()
 
-is_directory_empty(${CSKIA_SKIA_EXTERNALS_DIR} externals_exist)
+cskia_is_directory_empty(${CSKIA_SKIA_EXTERNALS_DIR} externals_exist)
 
 if(${externals_exist} OR ${CSKIA_FORCE_SYNC_DEPS})
     cskia_sync_deps()
